@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="530445ab-e673-4652-9b85-bd810c0fa274" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/Controller/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Controller/OrderController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/views/orders/form.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/views/orders/form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/Service/OrderService.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Service/OrderService.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1ojffYh8OS3sPYGhzSyrgg2Gwn6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/views" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\open.server.5.3.7.full\OpenServer\domains\localhost\shop\backend\views" />
+      <recent name="C:\Users\User\Desktop\open.server.5.3.7.full\OpenServer\domains\localhost\shop\backend\src\Controller" />
+      <recent name="C:\Users\User\Desktop\open.server.5.3.7.full\OpenServer\domains\localhost\shop\common\src\Service" />
+      <recent name="C:\Users\User\Desktop\open.server.5.3.7.full\OpenServer\domains\localhost\shop\frontend\view\Order" />
+      <recent name="C:\Users\User\Desktop\open.server.5.3.7.full\OpenServer\domains\localhost\shop\common\src\Model" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="530445ab-e673-4652-9b85-bd810c0fa274" name="Default Changelist" comment="" />
+      <created>1613805024625</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1613805024625</updated>
+      <workItem from="1613805025902" duration="2962000" />
+      <workItem from="1613809113740" duration="5847000" />
+      <workItem from="1613831108043" duration="7152000" />
+      <workItem from="1613850230375" duration="3398000" />
+      <workItem from="1613893567573" duration="6489000" />
+      <workItem from="1613902053929" duration="973000" />
+      <workItem from="1613986032712" duration="31000" />
+      <workItem from="1613986073648" duration="470000" />
+      <workItem from="1614071449153" duration="16268000" />
+      <workItem from="1614146044687" duration="21281000" />
+      <workItem from="1614175070309" duration="19000" />
+      <workItem from="1614228135743" duration="73000" />
+      <workItem from="1614228686201" duration="121000" />
+      <workItem from="1614228826782" duration="3857000" />
+      <workItem from="1614265892255" duration="6609000" />
+      <workItem from="1614311249271" duration="539000" />
+      <workItem from="1614312080765" duration="732000" />
+      <workItem from="1614315612418" duration="3495000" />
+      <workItem from="1614333272631" duration="15196000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
