@@ -49,7 +49,7 @@
                             <td><?=$n['email']?></td>
                             <td><?=$n['status']?></td>
                             <td><?=$n['created']?></td>
-                            <td><?=$n['updated']?></td>
+                            <td> <?=$n['updated']?> </td>
                             <td>
 <!--a class="btn btn-primary btn-sm" href="#">
 <i class="fas fa-folder">
