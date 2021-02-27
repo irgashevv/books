@@ -2,6 +2,7 @@
 
 include_once __DIR__ . "/../../../common/src/Service/SecurityService.php";
 include_once __DIR__ . "/../../../common/src/Service/UserService.php";
+include_once __DIR__ . "/../../../common/src/Model/User.php";
 
 class AuthController
 {
@@ -14,21 +15,21 @@ class AuthController
 
 	public function check()
 	{
-	    $login = htmlspecialchars($_POST['login']);
+	    $email = htmlspecialchars($_POST['login']);
 	    $password = htmlspecialchars($_POST['password']);
+        $user = (new User())->getByEmail($email);
 
-	    // TODO Get user from DB
 
-	    if (!$this->securityService->checkPassword($login, $password))
+	    if (!$this->securityService->checkPassword($user, $password))
 	    {
 	        throw new Exception('Incorrect Login or Password', 403);
         }
 	    // TODO Fix User Data
 	    UserService::saveUserData(
 	        [
-                'id' => 1,
-                'login' => $login,
-                'role' => 'guest'
+                'id' => $user['id'],
+                'login' => $user['email'],
+                'role' => json_encode($user['roles'], true)
             ]);
 	    SecurityService::redirectToStartPage();
     }

@@ -403,6 +403,9 @@ class Order
 	}
 
 
+    /**
+     * @return mixed
+     */
     public function getById($id)
     {
         $result = mysqli_query($this->conn, "select * from orders where id = " . $id . " limit 1");

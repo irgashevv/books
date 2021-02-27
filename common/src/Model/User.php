@@ -46,7 +46,6 @@ class User
         $roles = [])
     {
         $this->conn = DBConnector::getInstance()->connect();
-
         $this->setId($id);
         $this->setName($name);
         $this->setPhone($phone);
@@ -177,5 +176,34 @@ class User
         if (!$result) {
             throw new Exception(mysqli_error($this->conn), 400);
         }
+    }
+
+    /**
+     * @param $id
+     * @return mixed
+     */
+    public function getById($id)
+    {
+        $result = mysqli_query($this->conn, "select * from `user` where id = " . $id . " limit 1");
+
+        $one = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+        return reset($one);
+    }
+
+    /**
+     * @param $email
+     * @return mixed
+     */
+    public function getByEmail($email)
+    {
+        $result = mysqli_query($this->conn, "select * from `user` where email = '" . $email . "' limit 1");
+
+        if (!$result) {
+            throw new Exception("User not Found", 404);
+        }
+        $one = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+        return reset($one);
     }
 }

@@ -21,11 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="530445ab-e673-4652-9b85-bd810c0fa274" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Migrations/270220211818_migration_add_user_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Migrations/270220211818_migration_add_user_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/Model/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/Order.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/Model/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Model/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/Service/SecurityService.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/Service/SecurityService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Controller/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Controller/AuthController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Controller/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Controller/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/view/main_header.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/view/main_header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/view/register/form.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/view/register/form.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +107,7 @@
       <workItem from="1614333272631" duration="15196000" />
       <workItem from="1614410520055" duration="16744000" />
       <workItem from="1614438827417" duration="2102000" />
-      <workItem from="1614450307382" duration="2397000" />
+      <workItem from="1614450307382" duration="6686000" />
     </task>
     <servers />
   </component>
@@ -139,9 +139,13 @@
       <screen x="0" y="40" width="1366" height="728" />
     </state>
     <state x="518" y="327" key="NewPhpFileDialog/0.40.1366.728@0.40.1366.728" timestamp="1614414702362" />
-    <state x="390" y="139" width="585" height="582" key="find.popup" timestamp="1614450571125">
+    <state x="390" y="139" width="585" height="582" key="find.popup" timestamp="1614453565008">
       <screen x="0" y="40" width="1366" height="728" />
     </state>
-    <state x="390" y="139" width="585" height="582" key="find.popup/0.40.1366.728@0.40.1366.728" timestamp="1614450571125" />
+    <state x="390" y="139" width="585" height="582" key="find.popup/0.40.1366.728@0.40.1366.728" timestamp="1614453565008" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1614455076921">
+      <screen x="0" y="40" width="1366" height="728" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.40.1366.728@0.40.1366.728" timestamp="1614455076921" />
   </component>
 </project>

@@ -2,10 +2,20 @@
 
 class SecurityService
 {
-    public function checkPassword($login, $password)
+    public function checkPassword($user, $password)
     {
-        // TODO Check
-        return true;
+
+        if (empty($user)) {
+            throw new Exception('User Not Found', 404);
+        }
+
+        if (md5($password) !== $user['password']) {
+            // TODO Security
+            throw new Exception('Incorrect Password', 400);
+
+        }
+
+            return true;
     }
 
     public static function redirectToStartPage()

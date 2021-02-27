@@ -2,6 +2,7 @@
 
 include_once __DIR__ . "/../../../common/src/Model/User.php";
 include_once __DIR__ . "/../../../common/src/Service/SecurityService.php";
+
 class RegisterController
 {
     public function register()
