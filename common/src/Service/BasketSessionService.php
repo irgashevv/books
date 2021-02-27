@@ -2,9 +2,9 @@
 
 include_once __DIR__ . "/../Model/Basket.php";
 include_once __DIR__ . "/../Model/BasketItem.php";
-include_once __DIR__ . "/../Service/BasketService.php";
+include_once __DIR__ . "/Interfaces/BasketInterface.php";
 
-class BasketSessionService extends BasketService
+class BasketSessionService implements BasketInterface
 {
 	public function getBasketProducts($basket_id)
 	{
@@ -45,14 +45,4 @@ class BasketSessionService extends BasketService
 
 		$_SESSION['basket'] = serialize($session);
 	}
-
-	public function clearBasket($basket_id)
-    {
-        // TODO: Implement clearBasket() method.
-    }
-
-    public function getBasketIdByUserId($basket_id)
-    {
-        // TODO: Implement getBasketIdByUserId() method.
-    }
 }

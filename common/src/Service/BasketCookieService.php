@@ -3,21 +3,19 @@
 include_once __DIR__ . "/../Model/Basket.php";
 include_once __DIR__ . "/../Model/BasketItem.php";
 include_once __DIR__ . "/Interfaces/BasketInterface.php";
-include_once __DIR__ . "/../Service/BasketService.php";
 
-class BasketCookieService extends BasketService
+class BasketCookieService implements BasketInterface
 {
     const TIME_EXPIRED = 3600;
 
     /**
      * @param $basket_id
-     * @return array
+     * @return array|mixed
      */
     public function getBasketProducts($basket_id)
     {
         $data = $_COOKIE['basket'] ?? [];
-        if (empty($data) && sizeof($data) == 0)
-        {
+        if (empty($data) && sizeof($data) == 0) {
             return $data;
         }
         return unserialize($data);
@@ -32,10 +30,8 @@ class BasketCookieService extends BasketService
     {
         $data = $this->getBasketProducts($basket_id);
 
-        foreach ($data as $key => $item)
-        {
-            if ($item['product_id'] === $product_id)
-            {
+        foreach ($data as $key => $item) {
+            if ($item['product_id'] === $product_id) {
                 $data[$key]['quantity'] = $qty;
             }
         }
@@ -65,16 +61,5 @@ class BasketCookieService extends BasketService
     {
         //log()
         setcookie('basket', serialize($data), time() + self::TIME_EXPIRED);
-    }
-
-
-    public function clearBasket($basket_id)
-    {
-        // TODO: Implement clearBasket() method.
-    }
-
-    public function getBasketIdByUserId($basket_id)
-    {
-        // TODO: Implement getBasketIdByUserId() method.
     }
 }

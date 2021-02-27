@@ -3,7 +3,6 @@
 
 include_once __DIR__ . "/../../../common/src/Service/BasketService.php";
 include_once __DIR__ . "/../../../common/src/Service/BasketSessionService.php";
-include_once __DIR__ . "/../../../common/src/Service/BasketDBService.php";
 include_once __DIR__ . "/../../../common/src/Service/BasketCookieService.php";
 include_once __DIR__ . "/../../../common/src/Service/UserService.php";
 include_once __DIR__ . "/../../../common/src/Service/ProductService.php";
@@ -25,10 +24,10 @@ class BasketController
 		    throw new Exception('No Permission',403 );
         }
 
-		$this->basket = BasketDBService::getBasketByUserId($this->user['id']);
-		$this->basketService = new BasketDBService();
-//		    $this->basketService = new BasketSessionService();
-//          $this->basketService = new BasketCookieService();
+		$this->basket = BasketService::getBasketByUserId($this->user['id']); 
+//		$this->basketService = new BasketService();
+//		$this->basketService = new BasketSessionService();
+        $this->basketService = new BasketCookieService();
 		$this->items = $this->basketService->getBasketProducts((int)$this->basket['id']);
 	}
 
@@ -45,7 +44,6 @@ class BasketController
 		foreach ($this->items as $item) {
 			if ($item['product_id'] == $product_id)
 			{
-
 				$this->basketService->updateBasketItem($this->basket['id'], $product_id, $qty);
 
 				$this->redirectToBasket();

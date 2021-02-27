@@ -68,13 +68,13 @@
 			<div id="payments-system">
 				<div> We accept all major Credit Card/Debit Card/Internet Banking </div>
 				<div>
-                    <img src="http://localhost/shop/frontend/imgs/payments01.jpg" alt="">
-                    <img src="http://localhost/shop/frontend/imgs/payments02.jpg" alt="">
-                    <img src="http://localhost/shop/frontend/imgs/payments03.jpg" alt="">
+                    <img src="imgs/payments01.jpg">
+                    <img src="imgs/payments02.jpg">
+                    <img src="imgs/payments03.jpg">
                 </div>
 			</div>
 				<div class="info">
-					 Condition of Use Privacy Notice © 2012-2013, Books online, Inc. or its affiliates
+					 Conditions of Use Privacy Notice © 2012-2013, Booksonline, Inc. or its affiliates 
 				</div>
 		</footer>
 	</body>
