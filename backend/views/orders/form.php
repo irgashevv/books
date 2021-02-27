@@ -125,7 +125,7 @@
                                 <select name="status">
                                     <option disabled selected></option>
                                     <?php foreach (OrderService::getStatuses() as $key => $label) : ?>
-                                    <option <?=$one['status'] ?? null == $key ? 'selected' : ''?>
+                                    <option <?=$one['status'] ?? null === $key ? 'selected' : ''?>
                                     value="<?=$key?>"><?=$label?></option>
                                     <?php endforeach; ?>
                                 </select>

@@ -47,7 +47,7 @@
 				<tr><td colspan="6" class="total">Total:</td><td><?=$total?></td></tr>
 			</tbody>
 		</table>
-        <a href="http://localhost/shop/frontend/index.php?model=order&action=index">Create Order</a>
+        <a href="http://localhost/shop/frontend/index.php?model=order&action=index" id="btn-create-order">Create Order</a>
 	</div>
 </div>
 

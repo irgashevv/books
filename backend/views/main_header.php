@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <link rel="stylesheet" href="http://localhost/shop/backend/plugins/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="http://localhost/shop/backend/dist/css/adminlte.min.css">
-    <link rel="stylesheet" href="http://localhost/shop/frontend/css/styles.css">
     <style>
         img {
             width: 100px;
@@ -17,7 +16,7 @@
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
-        <a href="../../index3.html" class="brand-link">
+        <a href="/index.php" class="brand-link">
             <img src="../backend/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
             <span class="brand-text font-weight-light">PHP MVC</span>
         </a>

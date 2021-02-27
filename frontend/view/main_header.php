@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="http://localhost/shop/frontend/css/styles.css">
 	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 	<script src="http://localhost/shop/frontend/js/scripts.js"></script>
+    <link rel="stylesheet" href="http://localhost/shop/frontend/css/shop-style.css">
 </head>
 <body>
 	<header>
@@ -78,3 +79,4 @@
 			</select>
 		</nav>
 	</header>
+<div class="body">
