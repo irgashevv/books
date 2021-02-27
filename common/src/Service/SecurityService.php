@@ -13,4 +13,10 @@ class SecurityService
         header("location: http://localhost/shop/frontend/index.php");
         die();
     }
+
+    public static function redirectToLoginPage()
+    {
+        header("location: http://localhost/shop/frontend/index.php?model=site&action=login");
+        die();
+    }
 }
