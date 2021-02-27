@@ -1,31 +1,31 @@
-<?php include_once __DIR__ . "/../header.php"; ?>
+<?php include_once __DIR__ . "/../main_header.php"; ?>
 
 <div id="banner-container" class="width1024">
 	<div id="slider">
 		<div class="slides">
 			<div class="slide">
                 <a href="#">
-                    <img src="imgs/banner01.jpg">
+                    <img src="imgs/banner01.jpg" alt="">
                 </a>
             </div>
 			<div class="slide">
                 <a href="#">
-                    <img src="imgs/banner02.jpg">
+                    <img src="imgs/banner02.jpg" alt="">
                 </a>
             </div>
 			<div class="slide">
                 <a href="#">
-                    <img src="imgs/banner03.jpg">
+                    <img src="imgs/banner03.jpg" alt="">
                 </a>
             </div>
 		</div>
 			<a href="#" class="banner-btn btn-left">
                 <span></span>
-                <img src="imgs/banner_arrow_left.png">
+                <img src="imgs/banner_arrow_left.png" alt="">
             </a>
 			<a href="#" class="banner-btn btn-right">
                 <span></span>
-                <img src="imgs/banner_arrow_right.png">
+                <img src="imgs/banner_arrow_right.png" alt="">
             </a>
 	</div>
 	<div id="rand-product-banner">
@@ -33,7 +33,7 @@
 		<div class="slugan"> The human face of big Date</div>
 		<div class="pic">
             <a href="#">
-                <img src="imgs/book01.jpg">
+                <img src="imgs/book01.jpg" alt="">
             </a>
         </div>
 			<div class="price">
@@ -70,9 +70,14 @@
 	if ($i % 5 === 0) print "</ul><ul>" ;
 		?>
 				<li>
-					<img src="/shop/frontend/imgs/sale30.png">
-					<a href="http://localhost/shop/frontend/index.php?model=product&action=view&id=<?=$all[$i]['id']?>"><img src="http://localhost/shop/uploads/products/<?=$all[$i]['picture']?>"></a>
-					<h4><a href="http://localhost/shop/frontend/index.php?model=product&action=view&id=<?=$all[$i]['id']?>"><?=$all[$i]['title']?></a></h4>
+					<img src="/shop/frontend/imgs/sale30.png" alt="">
+					<a href="http://localhost/shop/frontend/index.php?model=product&action=view&id=<?=$all[$i]['id']?>">
+                        <img src="http://localhost/shop/uploads/products/<?=$all[$i]['picture']?>" alt="">
+                    </a>
+					<h4>
+                        <a href="http://localhost/shop/frontend/index.php?model=product&action=view&id=<?=$all[$i]['id']?>"><?=$all[$i]['title']?>
+                        </a>
+                    </h4>
 						<div class="price">$<?=$all[$i]['price']?></div>
 				</li>
 <?php endfor; ?>

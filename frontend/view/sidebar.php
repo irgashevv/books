@@ -3,7 +3,7 @@
 	<div class="mobile-element">
 		<select onchange="document.location=this.value">
 			<option>All</option>
-			<optgroup label="Fiction & literarure">
+			<optgroup label="Fiction & literature">
 					<option value="#Children">Children</option>
 					<option value="#Science Fiction">Science Fiction</option>
 					<option value="#Fantasy">Fantasy</option>
@@ -25,8 +25,8 @@
 				<li class="active"><a href="#">All</a></li>
 			</ul>
 		</div>
-		<div class="categories-grop">
-			<h4>Fiction & literarure</h4>
+		<div class="categories-group">
+			<h4>Fiction & literature</h4>
 				<ul>
 					<li><a href="#">Children</a></li>
 					<li><a href="#">Science Fiction</a></li>
@@ -39,7 +39,7 @@
 					<li><a href="#">Crime</a></li>
 				</ul>
 		</div>
-		<div class="categories-grop">
+		<div class="categories-group">
 			<h4>Non - Fiction</h4>
 				<ul>
 					<li><a href="#">Children</a></li>
@@ -51,7 +51,7 @@
 					<li><a href="#">Poetry</a></li>
 				</ul>
 		</div>
-		<div class="categories-grop">
+		<div class="categories-group">
 			<h4>Other</h4>
 				<ul>
 					<li><a href="#">Children</a></li>

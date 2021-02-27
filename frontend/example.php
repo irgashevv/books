@@ -5,5 +5,3 @@ try {
 } catch (Exception $e) {
 	
 }
-
- ?>

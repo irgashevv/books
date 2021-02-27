@@ -11,4 +11,8 @@ interface BasketInterface
 	public function createBasketItem($basket_id, $product_id, $qty);
 	
 	public function getBasketProducts($basket_id);
+
+	public function clearBasket($basket_id);
+
+	public function getBasketIdByUserId($basket_id);
 }

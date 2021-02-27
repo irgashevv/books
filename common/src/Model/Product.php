@@ -41,48 +41,50 @@ class Product
 	}
 
 
-	public function save() {
-
-	if ($this->id > 0) {
+	public function save()
+    {
+	if ($this->id > 0)
+	{
 		$query = "UPDATE products set 
 		title='" . $this->title . "',
-		preview='" . $this->preview . "',".
-		((!empty($this->picture)) ? "picture='" . $this->picture . "'," : "")
+		preview='" . $this->preview . "',
+		".((!empty($this->picture)) ? "picture='" . $this->picture . "'," : "")
 		. "content='". $this->content . "',
 		price='" . $this->price . "',
 		status='" . $this->status . "',
 		updated='" . $this->updated . "'
 		where id=" . $this->id . " limit 1";
-} else {
-		$query = "INSERT INTO products VALUES (null,
-		'" . $this->title . "',
-		'" . $this->picture . "',
-		'" . $this->preview . "',
-		'" . $this->content . "',
-		'" . $this->price . "',
-		'" . $this->status . "',
-		'" . $this->created . "',
-		'" . $this->updated . "')";
-}
+    } else
+        {
+		    $query = "INSERT INTO products VALUES (null,
+		    '" . $this->title . "',
+		    '" . $this->picture . "',
+		    '" . $this->preview . "',
+		    '" . $this->content . "',
+		    '" . $this->price . "',
+		    '" . $this->status . "',
+		    '" . $this->created . "',
+		    '" . $this->updated . "')";
+        }
 	$result = mysqli_query($this->conn, $query);
 	}
 
-	public function all() {
-
+	public function all()
+    {
 		$result = mysqli_query($this->conn, "select * from products order by id desc");
 		return mysqli_fetch_all($result, MYSQLI_ASSOC);
 	}
 
-	public function getById($id) {
+	public function getById($id)
+    {
 		$result = mysqli_query($this->conn, "select * from products where id=$id ");
 		$one = mysqli_fetch_all($result, MYSQLI_ASSOC);
 		
 		return reset($one);
-		
-
 	}
-	public function deleteById($id) {
+
+	public function deleteById($id)
+    {
 		mysqli_query ($this->conn, "delete from products where id = $id");
-		
 	} 
 }

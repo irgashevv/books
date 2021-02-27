@@ -35,42 +35,45 @@ class News
 	}
 
 
-	public function save() {
-
-	if ($this->id > 0) {
-		$query = "UPDATE news set 
-		title='" . $this->title . "',
-		preview='" . $this->preview . "',".
-		((!empty($this->picture)) ? "picture='" . $this->picture . "'," : "")
-		. "content='". $this->content . "',
-		updated='" . $this->updated . "'
-		where id=" . $this->id . " limit 1";
-} else {
-		$query = "INSERT INTO news VALUES (null,
-		'" . $this->title . "',
-		'" . $this->picture . "',
-		'" . $this->preview . "',
-		'" . $this->content . "',
-		'" . $this->created . "',
-		'" . $this->updated . "')";
-}
+	public function save()
+    {
+	    if ($this->id > 0)
+	    {
+	    	$query = "UPDATE news set 
+		    title='" . $this->title . "',
+		    preview='" . $this->preview . "',".
+		    ((!empty($this->picture)) ? "picture='" . $this->picture . "'," : "")
+		    . "content='". $this->content . "',
+		    updated='" . $this->updated . "'
+		    where id=" . $this->id . " limit 1";
+        } else
+            {
+                $query = "INSERT INTO news VALUES (null,
+		        '" . $this->title . "',
+		        '" . $this->picture . "',
+		        '" . $this->preview . "',
+		        '" . $this->content . "',
+		        '" . $this->created . "',
+	        	'" . $this->updated . "')";
+            }
 	$result = mysqli_query($this->conn, $query);
-
 	}
 
-	public function all() {
-
+	public function all()
+    {
 		$result = mysqli_query($this->conn, "select * from news order by id desc");
 		return mysqli_fetch_all($result, MYSQLI_ASSOC);
 	}
 
-	public function getById($id) {
+	public function getById($id)
+    {
 		$result = mysqli_query($this->conn, "select * from news where id=$id ");
 		$one = mysqli_fetch_all($result, MYSQLI_ASSOC);
 		return reset($one);
 	}
-	public function deleteById($id) {
+
+	public function deleteById($id)
+    {
 		mysqli_query ($this->conn, "delete from news where id = $id");
-		
 	} 
 }
