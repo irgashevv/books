@@ -16,15 +16,15 @@
 				<div class="width1024">
 					<ul class="desktop-element">
 						<li><a href="http://localhost/shop/frontend/index.php?model=site&action=login">Sign in</a></li>
-						<li><a href="">My account</a></li>
+						<li><a href="http://localhost/shop/frontend/index.php?model=register&action=form">Register</a></li>
 						<li><a href="">Order Status</a></li>
 						<li><a href="">Help</a></li>
 					</ul>
 					<div id="mobile-logo" class="mobile-element">BOOKS</div>
 				<select id="top-link" onchange="document.location=this.value" class="mobile-element">
 					<option disable selected></option>
-					<option value="#sigin">Sign in</option>
-					<option value="#account">My account</option>
+					<option value="http://localhost/shop/frontend/index.php?model=site&action=login">Sign in</option>
+					<option value="http://localhost/shop/frontend/index.php?model=register&action=form">Register</option>
 					<option value="#order">Order Status</option>
 					<option value="#help">Help</option>
 				</select>

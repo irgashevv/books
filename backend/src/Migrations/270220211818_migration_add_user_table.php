@@ -14,8 +14,6 @@ class MigrationAddUserTable
 
     public function commit()
     {
-        foreach ($this->data as $product)
-        {
             $result = mysqli_query($this->conn, "CREATE TABLE `user`(
             `id` int not null auto_increment,
             `name` varchar(256) not null,
@@ -26,13 +24,20 @@ class MigrationAddUserTable
             primary key(id)
             ) engine = InnoDB default char set utf8");
 
+            if (!$result) {
+                print mysqli_query($this->conn). PHP_EOL;
+            }
+
+            $result = mysqli_query($this->conn, "
+            INSERT INTO `user` ( `name`, `phone`, `email`, `password`, `roles`) 
+            VALUES ( 'superadmin', '" . md5("superadmin") . "', 'admin@mail.ru', '123123', '[\"ROLE_SUPER_ADMIN\"]');");
+
 
             if (!$result)
             {
                 print mysqli_error($this->conn) . PHP_EOL;
             }
         }
-    }
 
     public function rollback()
     {

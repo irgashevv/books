@@ -16,7 +16,7 @@
                 </div>
 
                 <div>
-                    <label for="">Email: </label><input type="email" name="email">
+                    <label for="">Email: </label><input type="text" name="email">
                 </div>
 
                 <div>

@@ -30,7 +30,6 @@ class RegisterController
                 htmlspecialchars($_POST['password']),
                 [User::ROLE_USER_VALUE]
             );
-
             $user->save();
 
             SecurityService::redirectToLoginPage();

@@ -165,7 +165,7 @@ class User
 		    where id=" . $this->id . " limit 1";
         } else
         {
-            $query = "INSERT INTO `user` (`id`, `name`, `phone`, ` email`, `password` , `roles`) VALUES (
+            $query = "INSERT INTO `user` (`id`, `name`, `phone`, `email`, `password` , `roles`) VALUES (
                 null,
 		        '" . $this->getName() . "',
 		        '" . $this->getPhone() . "',
@@ -174,13 +174,8 @@ class User
 		        '" . json_encode($this->getRoles()) . "')";
         }
         $result = mysqli_query($this->conn, $query);
+        if (!$result) {
+            throw new Exception(mysqli_error($this->conn), 400);
+        }
     }
-
-    public function all()
-    {
-        $result = mysqli_query($this->conn, "select * from shops order by id desc");
-        return mysqli_fetch_all($result, MYSQLI_ASSOC);
-    }
-
-
 }
