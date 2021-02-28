@@ -1,7 +1,15 @@
 <?php include_once __DIR__ . "/../main_header.php"; ?>
 
 <div class="width1024">
-	<div id="basket-container" class="body">
+    <?php if (empty($items) || !is_array($items)) : ?>
+        <div>
+            <div><br><br><br></div>
+            <p>Корзина Пуста</p>
+            <div><br><br><br></div>
+        </div>
+    <?php else : ?>
+    <div id="basket-container" class="body">
+
 		<table class="table">
 			<thead>
 				<tr>
@@ -48,7 +56,9 @@
 			</tbody>
 		</table>
         <a href="http://localhost/shop/frontend/index.php?model=order&action=index" id="btn-create-order">Create Order</a>
-	</div>
+
+    </div>
+    <?php endif ; ?>
 </div>
 
 <?php include_once __DIR__ . "/../footer.php"; ?>

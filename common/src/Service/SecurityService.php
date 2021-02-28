@@ -9,7 +9,7 @@ class SecurityService
             throw new Exception('User Not Found', 404);
         }
 
-        if (md5($password) !== $user['password']) {
+        if (UserService::encodePassword($password) !== $user['password']) {
             // TODO Security
             throw new Exception('Incorrect Password', 400);
 

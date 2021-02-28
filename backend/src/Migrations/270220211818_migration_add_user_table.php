@@ -1,6 +1,7 @@
 <?php
 
 include_once __DIR__ . "/../../../common/src/Service/DBConnector.php";
+include_once __DIR__ . "/../../../common/src/Service/UserService.php";
 
 class MigrationAddUserTable
 {
@@ -30,7 +31,7 @@ class MigrationAddUserTable
 
             $result = mysqli_query($this->conn, "
             INSERT INTO `user` ( `name`, `phone`, `email`, `password`, `roles`) 
-            VALUES ( 'superadmin', '" . md5("superadmin") . "', 'admin@mail.ru', '123123', '[\"ROLE_SUPER_ADMIN\"]');");
+            VALUES ( 'superadmin', '12323', 'admin@mail.ru', '" . UserService::encodePassword('superadmin') . "', '[\"ROLE_SUPER_ADMIN\"]');");
 
 
             if (!$result)

@@ -1,6 +1,7 @@
 <?php
 
 include_once __DIR__ . "/../Service/DBConnector.php";
+include_once __DIR__ . "/../Service/UserService.php";
 
 class User
 {
@@ -38,11 +39,11 @@ class User
     private $conn;
 
     public function __construct(
-        $id = null,
-        $name = null,
-        $phone = null,
-        $email = null,
-        $password = null,
+        $id = 0,
+        $name = "",
+        $phone = "",
+        $email = "",
+        $password = "",
         $roles = [])
     {
         $this->conn = DBConnector::getInstance()->connect();
@@ -131,7 +132,7 @@ class User
      */
     public function setPassword(string $password)
     {
-        $this->password = md5($password);
+        $this->password = UserService::encodePassword($password);
     }
 
     /**

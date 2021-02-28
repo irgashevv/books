@@ -24,7 +24,7 @@ class AuthController
 	    {
 	        throw new Exception('Incorrect Login or Password', 403);
         }
-	    // TODO Fix User Data
+
 	    UserService::saveUserData(
 	        [
                 'id' => $user['id'],
@@ -32,5 +32,12 @@ class AuthController
                 'role' => json_encode($user['roles'], true)
             ]);
 	    SecurityService::redirectToStartPage();
+    }
+
+    public function logout()
+    {
+        UserService::clear();
+
+        SecurityService::redirectToLoginPage();
     }
 }
